@@ -1,401 +1,1286 @@
-/********** Template CSS **********/
-:root {
-    --primary: #7EBC12;
-    --secondary: #FF0F10;
-    --light: #F2F2F2;
-    --dark: #1D2833;
+body {
+    color: #505e6b;
+    font-family: sans-serif !important;
+
 }
 
-
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
+html {
+    scroll-behavior: smooth;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
+#logo img {
+    width: 15%;
 }
 
-
-/*** Heading ***/
-h1,
-h2,
-.fw-bold {
-    font-weight: 700 !important;
+#header {
+    font-size: 14px;
 }
 
-h3,
-h4,
-.fw-semi-bold {
-    font-weight: 600 !important;
+#header i {
+    color: #16a8aa;
 }
 
-h5,
-h6,
-.fw-medium {
-    font-weight: 500 !important;
+#header a {
+    color: #16a8aa;
 }
 
-
-/*** Button ***/
-.btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    transition: .5s;
+#header a:hover {
+    color: #14305d;
 }
 
-.btn.btn-primary,
-.btn.btn-secondary {
-    color: #FFFFFF;
+.header-border {
+
+    border-bottom: 1px solid #DDDDDD42;
 }
 
-.btn-square {
-    width: 38px;
-    height: 38px;
+#logo {
+    height: 30px;
 }
 
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
-}
-
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
-}
-
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 8px;
-}
-
-
-/*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
-    position: relative;
-    margin-left: 25px;
-    padding: 35px 0;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF !important;
-    text-transform: uppercase;
+    color: #14305d !important;
     font-weight: 500;
-    outline: none;
-    transition: .5s;
+    font-size: 14px;
+    margin-left: 8px;
+    font-family: var(--e-global-typography-253c853-font-family), Sans-serif;
 }
-
-.sticky-top.navbar-light .navbar-nav .nav-link {
-    padding: 20px 0;
-    color: var(--dark) !important;
-}
-
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
-}
-
-.navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
-}
-
-.navbar-light .navbar-brand img {
-    max-height: 60px;
-    transition: .5s;
-}
-
-.sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
-}
-
-@media (max-width: 991.98px) {
-    .sticky-top.navbar-light {
-        position: relative;
-        background: #FFFFFF;
-    }
-
-    .navbar-light .navbar-collapse {
-        margin-top: 15px;
-        border-top: 1px solid #DDDDDD;
-    }
-
-    .navbar-light .navbar-nav .nav-link,
-    .sticky-top.navbar-light .navbar-nav .nav-link {
-        padding: 10px 0;
-        margin-left: 0;
-        color: var(--dark) !important;
-    }
-
-    .navbar-light .navbar-brand h1 {
-        color: var(--primary);
-    }
-
-    .navbar-light .navbar-brand img {
-        max-height: 45px;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar-light {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 999;
-    }
-    
-    .sticky-top.navbar-light {
-        position: fixed;
-        background: #FFFFFF;
-    }
-
-    .sticky-top.navbar-light .navbar-brand h1 {
-        color: var(--primary);
-    }
-}
-
-
-/*** Hero Header ***/
-.hero-header {
-    background:
-        url(../img/bg-round.png),
-        url(../img/bg-round-2.png),
-        url(../img/bg-square.png),
-        url(../img/bg-line.png),
-        url(../img/bg-bottom-hero.png);
-    background-position:
-        0px 40%,
-        right 0 top 0,
-        left 50% top 0,
-        left 50% top 50%,
-        center bottom -1px;
-    background-repeat: no-repeat;
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, .5);
-}
-
-
-/*** Section Title ***/
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 11px;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #5A5A5A;
-    border-bottom: 1px solid #5A5A5A;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 1px;
-    bottom: 5px;
-    left: 0;
-    background: var(--primary);
-}
-
-.section-title.text-center::before {
-    left: 50%;
-    margin-left: -30px;
-}
-
-.section-title.text-center::after {
-    width: 120px;
-    left: 50%;
-    margin-left: -60px;
-}
-
-
-/*** Domain Search ***/
-.domain {
-    background: url(../img/bg-domain.png) center center no-repeat;
-    background-size: contain;
-}
-
-
-/*** Comparison ***/
-@media (min-width: 992px) {
-    .comparison::after {
-        position: absolute;
-        content: "";
-        width: 1px;
-        top: 56px;
-        bottom: 20px;
-        left: 50%;
-        background: #DDDDDD;
-    }
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-item,
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item {
-    background: var(--primary) !important;
-    border-color: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item .position-absolute {
-    background: var(--secondary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #FFFFFF;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item h6 {
-    color: var(--dark) !important;
-}
-
-.testimonial-carousel .owl-dots {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    background: #DDDDDD;
-    border-radius: 15px;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    width: 30px;
-    background: var(--primary);
-}
-
-
-/*** Team ***/
-.team-item,
-.team-item .bg-primary,
-.team-item .bg-primary i {
-    transition: .5s;
-}
-
-.team-item:hover {
-    border-color: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary {
-    background: var(--secondary) !important;
-}
-
-.team-item:hover .bg-primary i {
-    color: var(--secondary) !important;
-}
-
-
-/*** Footer ***/
-.footer {
-    background:
-        url(../img/bg-round.png),
-        url(../img/bg-round-2.png),
-        url(../img/bg-square.png),
-        url(../img/bg-line.png),
-        url(../img/bg-bottom-footer.png);
-    background-position:
-        0px 112px,
-        right 0 bottom 0,
-        left 50% top 80px,
-        left 50% bottom 0,
-        top center;
-    background-repeat: no-repeat;
-}
-
-.footer p {
-    font-size: 15px;
-}
-
-.footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light);
-    border: 1px solid #FFFFFF;
-    border-radius: 35px;
-    transition: .3s;
-}
-
-.footer .btn.btn-social:hover {
-    color: var(--primary);
-}
-
-.footer .btn.btn-link {
+.dropdown-item {
     display: block;
-    margin-bottom: 5px;
-    padding: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+    clear: both;
+    font-weight: 500;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff !important;
+    text-decoration: none;
+    background-color:#16a8aa;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color:#16a8aa;
+    font-weight: 600;
+    /* background-color: ; */
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #16a8aa !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #16a8aa !important;
+    font-weight: 600;
+
+}
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 11rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
     text-align: left;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: normal;
-    transition: .3s;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0px rgba(128, 128, 128, 0.555);
 }
 
-.footer .btn.btn-link::before {
+#header-button {
+    background-color: #14305d;
+}
+
+#header-button span {
+    font-size: 16px;
+}
+
+#baneer-color {
+    background-color: #14315f;
+    height: 660px;
     position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
 }
 
-.footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
+#baneer-img {
+        background-image: url(../img/business-meeting-in-modern-conference-room-e1638180914840.jpg);
+        position: relative;
+        background-size: cover;
+        background-position: center;
 }
 
-.footer .copyright {
-    padding: 25px 0;
+#position {
+    position: absolute;
+    margin-top: 3%;
+}
+
+.header-links {
+    padding: 3%;
+}
+
+#banner-card-btn {
+    background-color: #16a8aa;
+}
+
+#team-img img {
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.781);
+}
+
+#team-card {
+    position: absolute;
+}
+
+#position #banner-card-btn:hover {
+    background-color: #14315f;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.404);
+    -webkit-transition: all .5s ease-out;
+}
+
+.team-about {
+    border-bottom: 4px #16a8aa solid;
+    /* width: 31%; */
+}
+
+.check-circle i {
+    color: #16a8aa;
+}
+
+#sec-banner #banner-card-btn:hover {
+    background-color: #14315f;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.404);
+    -webkit-transition: all .5s ease-out;
+}
+
+#enterpenur-img {
+    box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.781);
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.who-we-are {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #16a8aa;
+    transition: width .6s ease;
+}
+
+.check-icon i {
+    color: #16a8aa;
+}
+
+#view-btn button {
+    background-color: #16a8aa;
+    color: white;
+}
+
+#view-btn button:hover {
+    color: black;
+    background-color: white;
+    -webkit-transition: all .5s ease-out;
+}
+
+.Services {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.baneer {
+    margin-top: -9px;
+}
+
+#services-btn button {
+    background-color: #16a8aa;
+    color: white;
+}
+
+#services-btn button:hover {
+    color: white;
+    background-color: #14315f;
+}
+
+#bussiness-card {
+    height: 300px;
+    position: relative;
+
+}
+
+#bussiness-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#services-card1 {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    background-color: #FFFFFF;
+    padding: 40px 30px 40px 30px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+#services-card1:hover {
+    margin-top: 30px;
+    box-shadow: 0px 3px 5px 0px #14315f79;
+    -webkit-transition: all .5s ease-out;
+}
+
+.choose-us {
+    background-color: #061938;
+    padding: 20px;
+}
+
+.choose-us-heading {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.choose-container {
+    position: relative;
+}
+
+.choose-absolute-container {
+    position: absolute;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    padding-bottom: 3%;
+    padding-top: 3%;
+    top: 110%;
+}
+
+.case-heading {
+    border-bottom: 4px #16a8aa solid;
+    /* margin-left: 45%; */
+}
+
+.card-p-border {
+    border-bottom: 1px #dbe1e7 solid;
+    padding-bottom: 10px;
+}
+
+.process-heading {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.process-container {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.cases-container {
+    margin-top: 15%;
+    text-align: center;
+    position: relative;
+}
+
+.Testimonials {
+    background-color: #061938;
+    height: 100vh;
+    padding-top: 20%;
+    position: relative;
+    margin-top: 25%;
+}
+
+.case-absolute {
+    position: absolute;
+    top: -40%;
+    left: 0;
+}
+
+.case-absolute img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+
+}
+
+.case-absolute-hover {
+    position: relative;
+}
+
+.case-absolute-hover img {
+    position: relative;
+}
+
+.case-absolute-hover div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    padding: 20px;
+    background-color: #14305d;
+    opacity: 0;
+}
+.case-absolute-hover div:hover{
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.Testimonials .span {
+    border-bottom: 4px #16a8aa solid;
+    color: #ffffff;
+}
+
+.carousel {
+    background: #ffffff;
+}
+
+.carousel-cell {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 1px;
+    line-height: 30px;
+    padding: 20px 20px;
+    margin: 15px;
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+}
+
+.carousel-cell img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+
+
+
+.color-numbers {
+    background-color: #16a8aa;
+    color: white;
+    border-radius: 100%;
+    line-height: 50px;
+    padding: 20px;
+    width: 89px;
+}
+
+.border-div {
+    line-height: 50px;
+    margin-top: 5%;
+    border-top: 2px dashed #16a8aa52;
+}
+
+
+
+.process-cards {
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.process-cards:hover {
+    box-shadow: 0px 3px 15px 0px #16a8aa52;
+    margin-top: 20px;
+    -webkit-transition: all .5s ease-out;
+}
+
+.video-bg {
+    background-image: url(../img/team-of-cheerful-business-people-in-meeting-e1638180830256.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    margin-top: 8%;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-color {
+    background-color: #061938da;
+    height: 80vh;
+    text-align: center;
+
+}
+
+.video-color i {
+    color: #16a8aa;
+    font-size: 20px;
+    padding: 18px 23px;
+    border-radius: 100%;
+    height: 57px;
+    width: 57px;
+}
+
+.video-color div {
+    padding-top: 50px;
+}
+
+.video-color i:hover {
+    box-shadow: 0px 3px 15px 0px #16a8aacb;
+}
+
+.video-color button {
+    background-color: #16a8aa;
+    color: white;
+}
+
+.video-color button:hover {
+    background-color: white;
+    color: #14305d;
+    box-shadow: 0px 3px 15px 0px #16a8aacb;
+    -webkit-transition: all .5s ease-out;
+}
+
+.blog-container {
+    margin-top: 5%;
+}
+
+.blog-container span {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0.25rem;
+}
+
+.blog-cards {
+    text-align: left;
+
+}
+
+.blog-cards strong {
+    font-size: 20px;
+}
+
+.blog-cards strong a:hover {
+    color: #16a8aa;
+}
+
+.blog-cards .card:hover {
+    box-shadow: 0px 3px 15px 0px #16a8aa34;
+    -webkit-transition: all .5s ease-out;
+    margin-top: 30px;
+}
+
+.footer img {
+    width: 80%;
+}
+
+.footer-quick-links span {
+    border-bottom: 3px solid #16a8aa;
+    padding-bottom: 10px;
+}
+
+.footer-quick-links a:hover {
+    color: #16a8aa;
+    -webkit-transition: all .5s ease-out;
+}
+
+.footer-quick-links a {
+    color: #ffffff;
+}
+
+.footer-useful-links span {
+    border-bottom: 3px solid #16a8aa;
+    padding-bottom: 10px;
+}
+
+.footer-useful-links a:hover {
+    color: #16a8aa;
+    -webkit-transition: all .5s ease-out;
+}
+
+.footer-useful-links a {
+    color: #ffffff;
+}
+
+.footer-timming span {
+    border-bottom: 3px solid #16a8aa;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer-timming button {
+    background-color: #16a8aa;
+    color: #fff;
+}
+
+.footer-timming button:hover {
+    background-color: #ffffff;
+    color: #16a8aa;
+    -webkit-transition: all .5s ease-out;
+}
+
+.footer-container {
+    padding-bottom: 110px;
+    border-bottom: 1px solid #DDDDDD42;
+}
+
+.subscribed-position {
+    position: absolute;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    left: 7.5%;
+    top: -20%;
+    padding: 50px;
+}
+
+.subscribed-position h4 {
+    color: #14305d;
+}
+
+.footer {
+    position: relative;
+    background-color: #061938;
+    margin-top: 20%;
+    padding-top: 13%;
+    text-align: left;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .subscribed-position,
+    .icons {
+        display: none;
+    }
+
+    .baneer {
+        margin-top: 0;
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    #icons {
+        float: none;
+    }
+    .case-absolute-hoverpage{
+        margin-top: 20px
+        ;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .number-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cases-container {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cases-container {
+        margin-top: 50%;
+    }
+}
+
+@media screen and (max-width: 633px) {
+    .cases-container {
+        margin-top: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cases-container {
+        margin-top: 140%;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    #position {
+        margin-top: 5%;
+    }
+
+    .subscribed-position {
+        margin-left: 0%;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {
+    .subscribed-position {
+        margin-left: 7.5%;
+    }
+
+    .absolute-carousel {
+        margin-top: -6% !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #bussiness-card {
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+    .process-container {
+        margin-top: 20%;
+    }
+
+    .process-cards {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #side-btn,
+    .case-absolute {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    /* #position, */
+    #baneer-color
+    {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .Make-Appointment {
+        height: auto;
+    }
+
+    .appointment-description {
+        display: none;
+    }
+
+    .process-container {
+        padding-top: 25%;
+    }
+
+    .absolute-carousel .carousel .carousel-cell {
+        /* width: 100%; */
+        display: none;
+    }
+}
+
+
+/* service style sheet  */
+.baner-img-service {
+    background-image: url('../img/managers-working-with-financial-chart-e1638180766443.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-service {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.services-baner-text {
+    padding-top: 200px;
+}
+
+.Make-Appointment {
+    background-color: #14305d;
+    margin-top: 20%;
+    height: 620px;
+}
+
+
+.Make-Appointment-container {
+    margin-top: 8%;
+    padding-top: 13%;
+
+}
+
+.form {
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.233);
+    padding: 50px;
+    /* padding-top: 100px   ; */
+    padding-bottom: 90px;
+}
+
+.Make-Appointment-container input {
+    padding: 15px;
+}
+
+.Make-Appointment-container select {
+    padding: 15px;
+}
+
+.Make-Appointment-container textarea {
+    padding: 15px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #eaeaeacb;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e); */
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #eaeaeacb;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form button {
+    background-color: #16a8aa;
+    color: #fff;
+}
+
+.form button:hover {
+    background-color: #14305d;
+    color: white;
+    -webkit-transition: all .5s ease-out;
+    box-shadow: 0px 3px 15px 0px #16a8aa86;
+}
+
+.appointment-heading {
+    border-bottom: 3px solid #16a8aa;
+}
+
+.appointment-description {
+    padding-left: 50px;
+}
+
+.flickity-prev-next-button.previous {
+    display: none;
+}
+
+.flickity-prev-next-button.next {
+    display: none;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+.testimonials-bg-img {
+    background-image: url('../img/portrait-of-successful-business-team-working-in-office-2-e1638180907680.jpg');
+    height: 500px;
+    background-position: 0px 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 6%;
+    position: relative;
+}
+
+.testimonials-bg-clr {
+    opacity: 0.75;
+    height: 500px;
+    background-color: #061835;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: relative;
+}
+
+.testimonials-text span {
+    border-bottom: 3px solid #16a8aa;
+
+}
+
+.testimonials-text {
+    padding-top: 8%;
+}
+
+.absolute-carousel {
+    margin-top: -12%;
+}
+
+.our-pricing-heading {
+    border-bottom: 4px #16a8aa solid;
+}
+
+.our-pricing-container {
+    margin-top: 15%;
+}
+
+.our-pricing-links a {
+    color: #14305d;
+}
+
+.our-pricing-links a:hover {
+    color: #16a8aa;
+    -webkit-transition: all .5s ease-out;
+}
+
+.our-pricing-button {
+    background-color: #16a8aa;
+    color: #ffffff;
+}
+
+.our-pricing-button1 {
+    background-color: #16a8aa;
+    color: #ffffff;
+}
+
+.our-pricing-button:hover {
+    background-color: #14305d;
+    color: #ffffff;
+    box-shadow: 0px 0px 10px 0px #16a8aa6b;
+}
+
+.our-pricing-button1:hover {
+    background-color: #ffffff;
+    color: #14305d;
+    box-shadow: 0px 0px 10px 0px #16a8aa6b;
+}
+
+/* Cases style sheet  */
+.baner-img-cases {
+    background-image: url('../img/business-colleagues-working-in-modern-conference-room-e1638180932309.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-cases {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.cases-baner-text {
+    padding-top: 200px;
+}
+
+.case-absolute-hoverpage img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.case-absolute-hoverpage {
+    position: relative;
+}
+
+
+.case-absolute-hoverpage div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10.5px;
+    margin-right: 10.5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    background-color: #14305d;
+    opacity: 0;
+}
+.case-absolute-hoverpage div:hover{
+    opacity: 0.75;
+    transition: 0.5s;
+}
+/* about style  */
+
+.baner-img-about {
+    background-image: url('../img/successful-business-team-at-office-e1638180890109.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-about {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.about-baner-text {
+    padding-top: 200px;
+}
+.about-img-bg{
+    background-image:url(../img/business-people-present-the-business-project-e1638338287507.jpg) ;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.781);
+}
+.our-vision{
+    background-color: #fff;
+    padding: 25px;
+    margin-top: -30rem;
+    box-shadow: 0px 0px 10px 0px rgba(194, 194, 194, 0.438);
+}
+.our-vision1{
+    background-color:#16a8aa;
+    padding: 25px;
+    color: #fff;
+    margin-top: -30rem;
+    box-shadow: 0px 0px 10px 0px #16a8aa57;
+}
+.team-heading{
+    border-bottom: 4px #16a8aa solid;
+    color: #061938;
+}
+.team-absolute-hoverpage img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.team-absolute-hoverpage {
+    position: relative;
+}
+
+
+.team-absolute-hoverpage .hover-div {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    background-color: #14305d;
+    opacity: 0;
+    width: 100%;
+}
+.team-absolute-hoverpage  .hover-div:hover{
+    opacity: 0.75;
+    transition: 0.5s;
+}
+.team-social-links a{
+    color: white;
+    background-color: #16a8aa;
+    border-radius: 50px;
+    padding: 20px;
+}
+.team-social-links a:hover{
+    color:#16a8aa ;
+    background-color: #fff;
+    transition: 0.5s;
+
+}
+.team-social-links{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.team-title{
+    margin-top: -5%;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    margin-left: 3%;
+    /* width: 80%;  */
+    padding: 17px 60px 12px 60px;
+    box-shadow: 0px 2px 5px 0px #d6d6d6d3;
+
+}
+@media screen and (max-width: 1200px) {
+    .team-title , .our-vision1 , .our-vision{
+        display: none;
+    }
+    .team-absolute-hoverpage{
+        margin-top: 30px;
+    }
+    .testimonials-bg-clr , .testimonials-bg-img{
+        height: 300px;
+    }
+}
+/* pricing  */
+
+.baner-img-pricing {
+    background-image: url('../img/two-business-partnership-coworkers-analysis-strategy-with-discussing-a-financial-planning-graph-and-e1638181148665-pgru0uh76lotlkdufb71qzsuposlsbw99mbmhji87k.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-pricing {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.pricing-baner-text {
+    padding-top: 200px;
+}
+/* team  */
+.baner-img-team {
+    background-image: url('../img/happy-businesspeople-with-raised-hands-sitting-on-chairs-at-training-in-hub-e1638180818226.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-team {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.team-baner-text {
+    padding-top: 200px;
+}
+
+/* faq  */
+.baner-img-faq {
+    background-image: url('../img/discussing-company-financial-statistics-e1638180733814.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-faq {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.faq-baner-text {
+    padding-top: 200px;
+}
+/* 404  */
+.baner-img-404 {
+    background-image: url('../img/cheerful-business-team-giving-each-other-high-five-to-success-while-working-in-the-modern-office-e1638180845539.jpg');
+    height: 650px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
+}
+
+.baner-color-404 {
+    background-color: #061835;
+    height: 650px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.page404-baner-text {
+    padding-top: 150px;
+}
+.page404-baner-text h3{
+    font-size: 200px;
+    font-weight: 700;
+    color: #16a8aa;
+}
+.page404-baner-text h5{
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+}
+.page404-baner-text p{
     font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .3);
+    color:rgb(192, 192, 192);
+}
+.baner-img-blog {
+    background-image: url('../img/top-view-of-tax-forms-digital-devices-and-stationery-on-desk-e1638181077831.jpg');
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0px 100%;
+    background-size: cover;
 }
 
-.footer .copyright a {
-    color: var(--light);
+.baner-color-blog {
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
 
-.footer .footer-menu a {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .3);
+.blog-baner-text {
+    padding-top: 200px;
 }
+.card-body {
+    flex: 1 1 auto;
+    padding: 2rem 0rem;
+}
+.blog-btn{
+    background-color: #16a8aa;
+    color: white;
+    padding: 20px 92px 20px 92px;
+    margin-bottom: 20px;
+}
+.blog-btn:hover{
+    background-color: #14305d;
+   color: white;
+   transition: 0.5s;
+}
+.blog-card{
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    padding: 40px 40px 40px 40px;
+    line-height: 50px;
+}
+.blog-card a{
+   color: #14305d;
+   line-height: 25px;
+}
+.blog-card a:hover{
+    color:#16a8aa;
+ }
+ .blog-crad-img{
+    background-image: url('../img/business-team-casual-collaboration-discussing-working-analysis-with-financial-data-and-marketing-e1638180979952.jpg');
+    height: 300px;
+    margin-top: 13%;
+    background-size: cover;
+    background-position: center;
+ }
+ .blog-crad-clr{
+    background-color: #14305dc0;
+    height: 300px;
+ }
+ .blog-crad-text{
+    padding: 40px;
+    color: #fff;
+ }
+ .baner-img-singelblog{
+    background-image: url('../img/top-view-of-tax-forms-digital-devices-and-stationery-on-desk-e1638181077831.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+ }
+ .baner-color-singelblog{
+    background-color: #061835;
+    height: 500px;
+    opacity: 0.8;
+ }
+ .singelblog-baner-text{
+    padding: 40px;
+    color: #fff;
+    padding-top: 13%;
+ }
+ .single-blog-links i{
+    margin:0px 10px 10px 10px;
+    background-color: #16a8aa;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 10px 10px 13px;
+    width: 40px;
+ }
+ .single-blog-links i:hover{
 
-.footer .footer-menu a:last-child {
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
-}
+    background-color:#14305d ;
+
+ }
+ .singleblog-line{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.185);
+    padding-bottom: 50px;
+ }
+ .singblog-form .form-control{
+    border-color: #dbe1e7;
+    padding: 0.75rem;
+ }
+ .singblog-form .form-control:focus{
+    border-color: #333;
+    box-shadow: 0 0 0 0 rgba(13,110,253,.25);
+ }
+ .singblog-form button{
+    background-color: #16a8aa;
+    color: white;
+    padding: 1rem 2rem;
+ }
+ .singblog-form button:hover{
+    background-color:#14305d;
+    color: white;
+transition: 0.5;
+ }
+ .baner-img-contact{
+    background-image: url('../img/business-team-collaboration-discussing-working-analysis-with-financial-data-and-marketing-growth-e1638181040353.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+ }
+ .media i{
+    background-color: #16a8aa;
+    padding: 23px;
+    color: white;
+    font-size: 30px;
+ }
+ .contact-links i{
+background-color:#16a8aa;
+color: white;
+margin:0px 10px 10px 10px;
+border-radius: 50%;
+padding: 10px 10px 10px 13px;
+width: 40px;
+ }
+ .contact-links a .clr-change{
+    background-color:#14305d;
+color: white;
+ }
+ .contact-links i:hover{
+    background-color:#14305d;
+    color: white;
+    transition: 0.5s;
+ }
+ .contact-links a .clr-change:hover{
+    background-color:#16a8aa;
+color: white;
+transition: 0.5s;
+ }

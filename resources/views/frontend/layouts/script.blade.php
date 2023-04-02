@@ -1,11 +1,24 @@
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{asset('frontend/assets/lib/wow/wow.min.js')}}"></script>
-<script src="{{asset('frontend/assets/lib/easing/easing.min.js')}}"></script>
-<script src="{{asset('frontend/assets/lib/waypoints/waypoints.min.js')}}"></script>
-<script src="{{asset('frontend/assets/lib/counterup/counterup.min.js')}}"></script>
-<script src="{{asset('frontend/assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
-<!-- Template Javascript -->
-<script src="{{asset('frontend/assets/js/main.js')}}"></script>
+<!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+<script src="{{asset('frontend/assets/js/aos.js')}}"></script>
+<script>
+    AOS.init({
+        duration: 900,
+        delay: 900
+    });
+
+</script>
+
+
+<!--    <script src="{{asset('frontend/assets/js/jquery.counterup.min.js')}}"></script>-->
+<!--    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>-->
+<!-- counter script -->
+<script src="{{asset('frontend/assets/purecounter/purecounter_vanilla.js')}}"></script>
+<script src="{{asset('frontend/assets/js/purecounter/purecounter_vanilla.js')}}"></script>
+<script>
+    new PureCounter();
+</script>
+<!-- End counter script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>

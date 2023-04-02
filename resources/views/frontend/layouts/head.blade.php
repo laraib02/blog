@@ -1,29 +1,31 @@
 <head>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>GreenHost - Web Hosting HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/aos.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('frontend/assets/css/style.css')}}">
+    <link id="favicon" rel="shortcut icon" href="{{asset('frontend/assets/img/open-book.png')}}" type="image/png">
+    <title>Bizkeep - Bookkeeping</title>
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <!-- flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="{{asset('frontend/assets/js/flickity.min.css')}}">
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="{{asset('frontend/assets/js/flickity.pkgd.min.js')}}"></script>
+    <script>
+        function hover() {
+            var abc = document.getElementsByClassName("case-absolute-hover");
+            abc.innerHTML.display = "block";
+        }
 
-    <!-- Favicon -->
-    <link href="{{asset('frontend/assets/img/favicon.icon')}}" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="{{asset('frontend/assets/lib/animate/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('frontend/assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet asset aik function ha jo public golder nhi lhimna prta direct folder ki chedzine jmy deta ha -->
-    <link href="{{asset('frontend/assets/css/bootstrap.min.css')}}" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="{{asset('frontend/assets/css/style.css')}}" rel="stylesheet">
+    </script>
 </head>
