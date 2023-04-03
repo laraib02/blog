@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\frontendController;
+use App\Http\Controllers\backendcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,40 +12,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view ('frontend.pages.home');
-});
+Route::get('/',[frontendController::class, 'home']);
 
-Route::get('/services', function () {
-    return view ('frontend.pages.services');
-});
-Route::get('/cases', function () {
-    return view ('frontend.pages.caeses');
-});
-Route::get('/about', function () {
-    return view ('frontend.pages.about');
-});
-Route::get('/pricing', function () {
-    return view ('frontend.pages.pricing');
-});
-Route::get('/team', function () {
-    return view ('frontend.pages.team');
-});
-Route::get('/faq', function () {
-    return view ('frontend.pages.faq');
-});
-Route::get('/404', function () {
-    return view ('frontend.pages.404');
-});
-Route::get('/blog', function () {
-    return view ('frontend.pages.blog');
-});
-Route::get('/singleblog', function () {
-    return view ('frontend.pages.singleblog');
-});
-Route::get('/contact', function () {
-    return view ('frontend.pages.contact');
-});
+Route::get('/services', [frontendController::class, 'services']);
+
+Route::get('/cases', [frontendController::class, 'cases']);
+
+Route::get('/about', [frontendController::class, 'about']);
+
+Route::get('/pricing', [frontendController::class, 'pricing']);
+
+Route::get('/team', [frontendController::class, 'team']);
+
+Route::get('/faq', [frontendController::class, 'faq']);
+
+Route::get('/404', [frontendController::class, 'error']);
+
+Route::get('/blog', [frontendController::class, 'blog']);
+
+Route::get('/singleblog', [frontendController::class, 'singleblog']);
+
+Route::get('/contact', [frontendController::class, 'contact']);
+//Backend pages
+Route::get('/dashboard/index', [backendcontroller::class, 'index']);
 
 Auth::routes();
 

@@ -39,7 +39,7 @@
                     </li>
                     <li class="nav-item header-links">
                         <a class="nav-link" href="{{url('cases')}}">Cases</a>
-                    </li>
+                    </li>`
                     <li class="nav-item dropdown header-links">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">

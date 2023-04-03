@@ -6,7 +6,6 @@
 <body>
 @include('frontend.layouts.nav')
 
-{{--ya jo content ha is ma home page show krein gy--}}
 @yield('content')
 
 @include('frontend.layouts.footer')

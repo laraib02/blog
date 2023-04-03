@@ -33,7 +33,7 @@
         <div class="row mt-5">
             <div class="col-md-8 col-lg-8 col-xl-8 col-sm-12 col-xs-12">
                 <div class="card">
-                    <img src="{{asset('assets/frontend/img/business-trainer-explainig-strategy-of-development-e1638180959911.jpg')}}"
+                    <img src="{{asset('frontend/assets/img/business-trainer-explainig-strategy-of-development-e1638180959911.jpg')}}"
                          class="card-img-top" alt="...">
                     <div class="card-body">
                         <p>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="row ">
                     <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
-                        <img src="{{asset('assets/frontend/img/partner-meeting-of-business-team-colleagues-consultation-and-discussion-marketing-plan-meeting.jpg')}}"
+                        <img src="{{asset('frontend/assets/img/partner-meeting-of-business-team-colleagues-consultation-and-discussion-marketing-plan-meeting.jpg')}}"
                              alt="" class="img-fluid">
                     </div>
                     <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">

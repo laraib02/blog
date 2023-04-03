@@ -38,7 +38,7 @@
         <div class="row ">
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/business-agent-LTX7Y7U.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/business-agent-LTX7Y7U.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/group-picture-of-businessman-posing-in-office-ZKA6TFS.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/group-picture-of-businessman-posing-in-office-ZKA6TFS.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/positive-young-female-intern-in-glasses-PZFBQ3S.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/positive-young-female-intern-in-glasses-PZFBQ3S.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -106,7 +106,7 @@
         <div class="row " style="margin-top: 7%;">
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/businessman-posing-TZVK8U5.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/businessman-posing-TZVK8U5.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -128,7 +128,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/ceo-of-company-in-business-offices-Y45NYU5.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/ceo-of-company-in-business-offices-Y45NYU5.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -150,7 +150,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 " onmouseover="hover(this)">
                 <div class="team-absolute-hoverpage">
-                    <img src="{{asset('assets/frontend/img/confident-businessman-QWVC4G6.jpg')}}" alt="" class="">
+                    <img src="{{asset('frontend/assets/img/confident-businessman-QWVC4G6.jpg')}}" alt="" class="">
                     <div class=" h-100 hover-div">
 
                         <div class="team-social-links">
@@ -242,7 +242,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-6 col-xs-12 col-sm-12  p-0 " id="team-img">
-                <img src="{{asset('assets/frontend/img/entrepreneurs-and-business-people-conference-in-modern-meeting-room-e1638180939182.jpg')}}"
+                <img src="{{asset('frontend/assets/img/entrepreneurs-and-business-people-conference-in-modern-meeting-room-e1638180939182.jpg')}}"
                      alt="" id="enterpenur-img" class="rounded-end">
             </div>
         </div>
@@ -277,7 +277,7 @@
         <div class="row ">
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 case-absolute-hoverpage"
                  onmouseover="hover(this)">
-                <img src="{{asset('assets/frontend/img/financial-services-e1638180715159.jpg')}}" alt="" class=" ">
+                <img src="{{asset('frontend/assets/img/financial-services-e1638180715159.jpg')}}" alt="" class=" ">
                 <div  class=" h-100 ">
                     <h3 class="text-white pt-5">
                         Investment Management
@@ -291,7 +291,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 case-absolute-hoverpage"
                  onmouseover="hover(this)">
-                <img src="{{asset('assets/frontend/img/business-team-collaboration-discussing-working-analysis-with-financial-data-and-marketing-growth-e1638181040353.jpg')}}"
+                <img src="{{asset('frontend/assets/img/business-team-collaboration-discussing-working-analysis-with-financial-data-and-marketing-growth-e1638181040353.jpg')}}"
                      alt="" class="">
                 <div  class=" h-100 ">
                     <h3 class="text-white pt-5">
@@ -306,7 +306,7 @@
             </div>
             <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 case-absolute-hoverpage"
                  onmouseover="hover(this)">
-                <img src="{{asset('assets/frontend/img/financial-statistics-e1638180991833.jpg')}}" alt="" class="">
+                <img src="{{asset('frontend/assets/img/financial-statistics-e1638180991833.jpg')}}" alt="" class="">
                 <div  class=" h-100 ">
                     <h3 class="text-white pt-5">
                         Investment Management
