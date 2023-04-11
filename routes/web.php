@@ -37,6 +37,7 @@ Route::get('/contact', [frontendController::class, 'contact']);
 //Backend pages
 Route::get('/dashboard/home', [backendcontroller::class, 'index']);
 Route::get('/students-create', [StudentController::class, 'screate']);
+Route::post('/students-store', [StudentController::class, 'store']);
 Route::get('/students-list', [StudentController::class, 'slist']);
 
 Auth::routes();
