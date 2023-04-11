@@ -21,26 +21,34 @@
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
+                        <th>Father Name</th>
+                        <th>Phone Num</th>
+                        <th>Department</th>
+                        <th>Session</th>
+                        <th>Inter Grade</th>
+                        <th>created_at</th>
+                        <th>updated_at</th>
                         <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
+                    @foreach($students as $key=> $student)
                     <tr>
-                        <td>1</td>
-                        <td>Brielle Williamson</td>
-                        <td>Integration Specialist</td>
-                        <td>New York</td>
-                        <td>61</td>
-                        <td>2012/12/02</td>
+                        <td>{{$key+1}}</td>
+                        <td>{{$student->name}}</td>
+                        <td>{{$student->fname}}</td>
+                        <td>{{$student->phone_num}}</td>
+                        <td>{{$student->department}}</td>
+                        <td>{{$student->session}}</td>
+                        <td>{{$student->intermediate_grade}}</td>
+                        <td>{{$student->created_at}}</td>
+                        <td>{{$student->updated_at}}</td>
                         <td>
                             <a href=""><i class="fa fa-edit text-primary p-2"></i></a>
                             <a href=""> <i class="fa fa-trash text-danger  p-2"></i></a>
                         </td>
                     </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

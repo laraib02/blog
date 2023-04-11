@@ -15,7 +15,8 @@ class StudentController extends Controller
 
     function slist()
     {
-        return view('backend.pages.student-list');
+        $students=Student::all();
+        return view ('backend.pages.student-list',compact('students'));
     }
 
     function store(Request $request)
@@ -38,7 +39,6 @@ class StudentController extends Controller
 //            'department' => $request->department,
 //            'phone_num' => $request->phone
 //        ]);
-
 // with model
         Student::create([
             'name' => $request->name,
@@ -49,13 +49,10 @@ class StudentController extends Controller
             'phone_num' => $request->phone
         ]);
 
-
-
-
             return redirect()->to(url('students-create'));
-
+    }
+    function view(){
 
     }
-
 
 }
