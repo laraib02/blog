@@ -16,9 +16,10 @@
                 </h4>
             </div>
             <div class="card-body">
-                <table id="" class="table table-bordered table-striped text-center">
+                <div class="table-responsive">
+                    <table id="" class="table table-bordered table-striped text-center">
                     <thead>
-                    <tr>
+                    <tr class="text-nowrap">
                         <th>#</th>
                         <th>Name</th>
                         <th>Father Name</th>
@@ -33,7 +34,7 @@
                     </thead>
                     <tbody>
                     @foreach($students as $key=> $student)
-                    <tr>
+                    <tr class="text-nowrap">
                         <td>{{$key+1}}</td>
                         <td>{{$student->name}}</td>
                         <td>{{$student->fname}}</td>
@@ -44,13 +45,14 @@
                         <td>{{$student->created_at}}</td>
                         <td>{{$student->updated_at}}</td>
                         <td>
-                            <a href=""><i class="fa fa-edit text-primary p-2"></i></a>
-                            <a href=""> <i class="fa fa-trash text-danger  p-2"></i></a>
+                            <a href="{{url('student-edit',$student->id)}}"><i class="fa fa-edit text-primary "></i></a> |
+                            <a href="{{url('student-destroy',$student->id)}}"> <i class="fa fa-trash text-danger  pl-2"></i></a>
                         </td>
                     </tr>
                         @endforeach
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
 @endsection

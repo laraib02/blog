@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1f4edbb-8f32-43ec-b64d-da87a6f24972" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/student/student-edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/student-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/student-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +140,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/pages/student" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,6 +150,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Xammp\htdocs\blog\resources\views\backend\pages\student" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Xammp\htdocs\blog\resources\views\frontend\pages" />
       <recent name="D:\Xammp\htdocs\blog\resources\views\frontend\layouts" />
@@ -196,7 +202,7 @@
       <workItem from="1681368474187" duration="539000" />
       <workItem from="1681403199369" duration="2653000" />
       <workItem from="1681406659897" duration="1598000" />
-      <workItem from="1681487738810" duration="3575000" />
+      <workItem from="1681487738810" duration="12237000" />
     </task>
     <servers />
   </component>

@@ -39,7 +39,9 @@ Route::get('/dashboard/home', [backendcontroller::class, 'index']);
 Route::get('/students-create', [StudentController::class, 'screate']);
 Route::post('/students-store', [StudentController::class, 'store']);
 Route::get('/students-list', [StudentController::class, 'slist']);
+Route::get('/student-destroy/{id}', [StudentController::class, 'trash']);
+Route::get('/student-edit/{id}', [StudentController::class, 'edit']);
+Route::post('/student-update/{id}', [StudentController::class, 'update']);
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
 
