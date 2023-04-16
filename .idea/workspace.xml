@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1f4edbb-8f32-43ec-b64d-da87a6f24972" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/student/student-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/course/course-create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/course/course-edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/pages/course/course-list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/student-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/student-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Student.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Student.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_04_11_171227_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_04_11_171227_create_students_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/sidenav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/sidenav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/student-create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/student/student-create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/student-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/student/student-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/pages/student/student-edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/pages/student/student-edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,6 +161,8 @@
       <recent name="D:\Xammp\htdocs\blog\resources\views\backend\pages\student" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xammp\htdocs\blog\resources\views\backend\pages\course" />
+      <recent name="D:\Xammp\htdocs\blog\resources\views\backend\pages\student" />
       <recent name="D:\Xammp\htdocs\blog\resources\views\frontend\pages" />
       <recent name="D:\Xammp\htdocs\blog\resources\views\frontend\layouts" />
     </key>
@@ -202,7 +211,11 @@
       <workItem from="1681368474187" duration="539000" />
       <workItem from="1681403199369" duration="2653000" />
       <workItem from="1681406659897" duration="1598000" />
-      <workItem from="1681487738810" duration="12237000" />
+      <workItem from="1681487738810" duration="12581000" />
+      <workItem from="1681505558304" duration="1582000" />
+      <workItem from="1681552840972" duration="7051000" />
+      <workItem from="1681572640615" duration="10338000" />
+      <workItem from="1681667453242" duration="1781000" />
     </task>
     <servers />
   </component>
@@ -218,14 +231,14 @@
       <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="186" y="6" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1676548199519" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1681237556550">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1681578155016">
       <screen x="0" y="0" width="1366" height="720" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.720@0.0.1366.720" timestamp="1681237556550" />
-    <state x="379" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1681487912585">
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.720@0.0.1366.720" timestamp="1681578155016" />
+    <state x="379" y="185" key="com.intellij.ide.util.TipDialog" timestamp="1681669116790">
       <screen x="0" y="0" width="1366" height="720" />
     </state>
-    <state x="379" y="185" key="com.intellij.ide.util.TipDialog/0.0.1366.720@0.0.1366.720" timestamp="1681487912585" />
+    <state x="379" y="185" key="com.intellij.ide.util.TipDialog/0.0.1366.720@0.0.1366.720" timestamp="1681669116790" />
     <state x="345" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1679766341230">
       <screen x="0" y="0" width="1366" height="720" />
     </state>

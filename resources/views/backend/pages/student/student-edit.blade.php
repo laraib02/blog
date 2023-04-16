@@ -72,6 +72,14 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <lable>Select course</lable>
+                            <select id="" class="form-control mt-2 " {{ $data->course_id == true ? 'selected' : '' }} name="course_id"  value="{{$data->course_id}}" >
+                                @foreach($courses as  $course)
+                                    <option value="{{$course->id}}">{{$course->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 mt-4">
                             <lable>Intermediate Grade</lable>
                             <input type="text" class="form-control  mt-2 @error('grade') is-invalid @enderror" value="{{$data->intermediate_grade}}" name="grade">
                             <span class="text-danger">

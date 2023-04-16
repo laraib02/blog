@@ -22,10 +22,11 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <lable> Name</lable>
-                            <input type="text" class="form-control mt-2   @error('name') is-invalid @enderror" name="name"  >
+                            <input type="text" class="form-control mt-2   @error('name') is-invalid @enderror"
+                                   name="name">
                             <span class="text-danger">
                                 @error('name')
-                                    {{$message}}
+                                {{$message}}
                                 @enderror
                             </span>
 
@@ -33,7 +34,8 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <lable>Father Name</lable>
-                            <input type="text" class="form-control  mt-2  @error('fname') is-invalid @enderror" name="fname">
+                            <input type="text" class="form-control  mt-2  @error('fname') is-invalid @enderror"
+                                   name="fname">
                             <span class="text-danger">
                                 @error('fname')
                                 {{$message}}
@@ -44,7 +46,8 @@
                     <div class="row mt-4">
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <lable> Phone Number</lable>
-                            <input type="number" class="form-control mt-2 @error('phone') is-invalid @enderror" name="phone">
+                            <input type="number" class="form-control mt-2 @error('phone') is-invalid @enderror"
+                                   name="phone">
                             <span class="text-danger">
                                 @error('phone')
                                 {{$message}}
@@ -53,7 +56,8 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <lable>Department</lable>
-                            <input type="text" class="form-control  mt-2 @error('department') is-invalid @enderror" name="department">
+                            <input type="text" class="form-control  mt-2 @error('department') is-invalid @enderror"
+                                   name="department">
                             <span class="text-danger">
                                 @error('department')
                                 {{$message}}
@@ -64,7 +68,8 @@
                     <div class="row mt-4">
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
                             <lable> Session</lable>
-                            <input type="text" class="form-control mt-2 @error('class_session') is-invalid @enderror" name="class_session">
+                            <input type="text" class="form-control mt-2 @error('class_session') is-invalid @enderror"
+                                   name="class_session">
                             <span class="text-danger">
                                 @error('class_session')
                                 {{$message}}
@@ -72,8 +77,17 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <lable>Select course</lable>
+                            <select id="" class="form-control mt-2 @error('course_id') is-invalid @enderror" name="course_id">
+                                @foreach($courses as  $course)
+                                    <option value="{{$course->id}}">{{$course->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 mt-4">
                             <lable>Intermediate Grade</lable>
-                            <input type="text" class="form-control  mt-2 @error('grade') is-invalid @enderror" name="grade">
+                            <input type="text" class="form-control  mt-2 @error('grade') is-invalid @enderror"
+                                   name="grade">
                             <span class="text-danger">
                                 @error('grade')
                                 {{$message}}

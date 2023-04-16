@@ -26,6 +26,7 @@
                         <th>Phone Num</th>
                         <th>Department</th>
                         <th>Session</th>
+                        <th>Course</th>
                         <th>Inter Grade</th>
                         <th>created_at</th>
                         <th>updated_at</th>
@@ -41,6 +42,7 @@
                         <td>{{$student->phone_num}}</td>
                         <td>{{$student->department}}</td>
                         <td>{{$student->session}}</td>
+                        <td>{{$student->course_get->name}}</td>
                         <td>{{$student->intermediate_grade}}</td>
                         <td>{{$student->created_at}}</td>
                         <td>{{$student->updated_at}}</td>
